@@ -16,6 +16,8 @@
  */
 package services.vehicles.common;
 
+import teet.Test;
+
 import java.util.Date;
 
 /**
@@ -28,11 +30,14 @@ public class Vehicle {
 
     private Double price;
 
+    private Test test;
+
     public Vehicle(String name, Date year, Double price) {
         this.name = name;
         this.year = year;
         this.price = price;
     }
+
 
     public String getName() {
         return name;
@@ -56,5 +61,13 @@ public class Vehicle {
 
     public void setPrice(Double price) {
         this.price = price;
+    }
+
+    public Test getTest() {
+        return test;
+    }
+
+    public void setTest(Test test) {
+        this.test = test;
     }
 }
